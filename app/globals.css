@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 35 38% 98%;
+  --foreground: 222 47% 11%;
+  --muted: 35 26% 93%;
+  --muted-foreground: 215 16% 39%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  --border: 35 18% 86%;
+  --input: 35 18% 86%;
+  --primary: 159 57% 32%;
+  --primary-foreground: 35 40% 98%;
+  --secondary: 36 47% 89%;
+  --secondary-foreground: 222 47% 11%;
+  --accent: 23 78% 91%;
+  --accent-foreground: 222 47% 11%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 159 57% 32%;
+}
+
+.dark {
+  --background: 220 30% 10%;
+  --foreground: 35 40% 97%;
+  --muted: 219 23% 16%;
+  --muted-foreground: 214 15% 70%;
+  --card: 220 28% 12%;
+  --card-foreground: 35 40% 97%;
+  --border: 219 19% 22%;
+  --input: 219 19% 22%;
+  --primary: 154 51% 45%;
+  --primary-foreground: 222 47% 11%;
+  --secondary: 219 23% 16%;
+  --secondary-foreground: 35 40% 97%;
+  --accent: 28 62% 18%;
+  --accent-foreground: 35 40% 97%;
+  --destructive: 0 62% 41%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 154 51% 45%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(232, 245, 235, 0.9), transparent 32%),
+    radial-gradient(circle at right 20%, rgba(255, 222, 196, 0.5), transparent 26%),
+    hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.dark body {
+  background:
+    radial-gradient(circle at top left, rgba(17, 73, 51, 0.35), transparent 28%),
+    radial-gradient(circle at right 20%, rgba(92, 49, 22, 0.28), transparent 24%),
+    hsl(var(--background));
+}
